@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html lang="en">
 <head>
     <meta name="viewport" content="width=device-width">
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -24,11 +24,12 @@
 
             .hero-banner {
                 background: #fff;
-                margin-top: 32px;
+                display: flex;
             }
 
             figure {
                 margin: 0;
+                margin-top: 32px;
             }
 
             figure figcaption {
@@ -137,37 +138,37 @@
                 text-decoration: none;
             }
 
-            .footer ul {
-                display: flex;
-                list-style: none;
-                padding-left: 0;
-                justify-content: center;
-                margin-bottom: 0;
+
+
+            .social-links, .other-links {
+                margin-top: 24px;
             }
 
-            .social-links ul {
-                padding: 0 20px 0px;
+            .social-links a, .other-links a {
+                display: inline-block;
             }
 
-            .social-links ul li {
+            .social-links span {
                 margin-top: 0;
             }
 
-            .other-links ul li {
-                line-height: 11px;
+            .other-links span {
+                line-height: 16px;
                 border-right: 1px solid #adb3b5;
                 padding-right: 10px;
                 margin-right: 10px;
                 margin-top: 0;
+                display: inline-block;
             }
-            .other-links ul li:last-child {
+            .other-links span:last-child {
                 border-right: none;
                 padding-right: 0px;
                 margin-right: 0px;
             }
-            .other-links ul a {
+            .other-links a {
                 color: #adb3b5;
                 text-decoration: none;
+                text-align: center;
             }
             .footer p, .footer {
                 font-size: 12px;
@@ -180,15 +181,24 @@
             }
             .other-links ul {
                 margin-bottom: 5px;
+                text-align: center;
             }
             td.wrapper {
                 padding-left: 48px;
                 padding-right: 48px;
             }
+            .content {
+                width: 600px;
+            }
+
+            table[class=body] .wrapper {
+                padding: 64px 48px;
+            }
+
         }
         @media only screen and (max-width: 600px) {
             table[class=body] h1 {
-                font-size: 28px !important;
+                font-size: 32px !important;
                 margin-bottom: 10px !important;
             }
 
@@ -199,11 +209,6 @@
             table[class=body] span,
             table[class=body] a {
                 font-size: 16px;
-            }
-
-            table[class=body] .wrapper,
-            table[class=body] .article {
-                padding: 64px 46px;
             }
 
 
@@ -238,13 +243,17 @@
             }
         }
         @media only screen and (max-width: 480px) {
-            .city.city2 {
-                display: none;
+           .content {
+               width: 480px;
+           }
+
+            .other-links span a {
+                font-size: 12px;
             }
 
             table[class=body] .wrapper,
             table[class=body] .article {
-                padding: 64px 32px;
+                padding: 64px 24px;
             }
 
            td.wrapper {
@@ -269,8 +278,14 @@
             .footer {
                 padding: 20px 10px 10px;
             }
+            .content {
+                width: 375px;
+            }
         }
         @media only screen and (max-width: 320px) {
+            .content {
+                width: 320px;
+            }
             .other-links ul li {
                 padding-right: 7px;
                 margin-right: 8px;
@@ -279,9 +294,9 @@
     </style>
 </head>
 <body class=""
-      style="background-color: #E5E5E5; font-family: Arial; -webkit-font-smoothing: antialiased; font-size: 16px; line-height: 32px; margin: 0; padding: 0; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;">
-<table border="0" cellpadding="0" cellspacing="0" class="body"
-       style="border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; width: 100%; margin: 0 auto; max-width: 600px; background-color: #E5E5E5;">
+      style="background-color: #E5E5E5; font-family: Arial; overflow-x: hidden; -webkit-font-smoothing: antialiased; font-size: 16px; line-height: 32px; margin: 0; padding: 0; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;">
+<table class="body"
+       style="border-collapse: collapse; width: 100%; margin: 0 auto; max-width: 600px; background-color: #E5E5E5;">
     <tr>
         <td class="container"
             style="">
@@ -291,10 +306,10 @@
                 <!--<span class="preheader" style="color: transparent; display: none; height: 0; max-height: 0; max-width: 0; opacity: 0; overflow: hidden; mso-hide: all; visibility: hidden; width: 0;">This is preheader text. Some clients will show this text as a preview.</span>
                 -->
                 <div class="header">
-                    <a href="#"> <img src="GOGOX-white-yellow.svg" alt=""/> </a>
+                    <a href="#"> <img src="images/GOGOX-white-yellow.png" alt=""/> </a>
                 </div>
                 <div class="hero-banner">
-                    <img src="gogox_delivery.svg" alt="" />
+                    <img src="images/gogox_delivery.png" alt="" />
                 </div>
                 <table class="main"
                        style="border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; width: 100%; background: #ffffff;">
@@ -324,30 +339,30 @@
                                             amet lectus tempus, vitae fringilla mauris malesuada.
                                         </p>
                                         <figure class="hero-banner">
-                                            <img src="gogox_HongKong_city.svg" alt="" />
+                                            <img src="images/gogox_HongKong_city.png" alt="" />
                                             <figcaption>Sed interdum sem non ante pellentesque commodo. Ut sed augue.
                                                 Aenean in nulla turpis.
                                             </figcaption>
                                         </figure>
                                         <figure class="hero-banner">
-                                            <img src="gogox_city-07.svg" alt="" />
+                                            <img src="images/gogox_city-07.png" alt="" />
                                             <figcaption>Sed interdum sem non ante pellentesque commodo. Ut sed augue.
                                                 Aenean in nulla turpis.
                                             </figcaption>
                                         </figure>
                                         <figure class="hero-banner">
-                                            <img src="gogox_city-08.svg" alt="" />
+                                            <img src="images/gogox_city-08.png" alt="" />
                                             <figcaption>Sed interdum sem non ante pellentesque commodo. Ut sed augue.
                                                 Aenean in nulla turpis.
                                             </figcaption>
                                         </figure>
                                        <!-- <div class="delivery-cities">
                                             <figure class="city city1">
-                                                <img src="gogox_city-07.svg" alt="" />
+                                                <img src="images/gogox_city-07.png" alt="" />
                                                 <figcaption>Sed interdum sem non ante pellentesque.</figcaption>
                                             </figure>
                                             <figure class="city city2">
-                                                <img src="gogox_city-08.svg" alt="" />
+                                                <img src="images/gogox_city-08.png" alt="" />
                                                 <figcaption>Sed interdum sem non ante pellentesque.</figcaption>
                                             </figure>
                                         </div>-->
@@ -384,19 +399,15 @@
                         Visit us at <a href="#">gogox.com</a>
                     </div>
                     <div class="social-links">
-                        <ul>
-                            <li><a target="_blank" href="https://www.facebook.com/GOGOXhk/"><img src="facebook.png" alt="facebook" /> </a> </li>
-                            <li><a target="_blank" href="https://www.instagram.com/gogovan_hk/"><img src="instagram.png" alt="instagram" /> </a> </li>
-                            <li><a target="_blank" href="https://www.youtube.com/c/gogovanhk"><img src="youtube.png" alt="youtube" /> </a> </li>
-                            <li><a target="_blank" href="https://www.linkedin.com/company/gogovan/"><img src="linkedin.png" alt="linkedin" /> </a> </li>
-                        </ul>
+                            <span><a target="_blank" href="https://www.facebook.com/GOGOXhk/"><img src="images/facebook.png" alt="facebook" /> </a> </span>
+                            <span><a target="_blank" href="https://www.instagram.com/gogovan_hk/"><img src="images/instagram.png" alt="instagram" /> </a> </span>
+                            <span><a target="_blank" href="https://www.youtube.com/c/gogovanhk"><img src="images/youtube.png" alt="youtube" /> </a> </span>
+                            <span><a target="_blank" href="https://www.linkedin.com/company/gogovan/"><img src="images/linkedin.png" alt="linkedin" /> </a> </span>
                     </div>
                     <div class="other-links">
-                        <ul>
-                            <li><a target="_blank" href="https://www.gogox.com/privacy">Privacy Policy</a></li>
-                            <li><a target="_blank" href="https://www.gogox.com/privacy">Terms & Conditions</a></li>
-                            <li><a target="_blank" href="#">Unsubscribe</a></li>
-                        </ul>
+                            <span><a target="_blank" href="https://www.gogox.com/privacy">Privacy Policy</a></span>
+                            <span><a target="_blank" href="https://www.gogox.com/privacy">Terms & Conditions</a></span>
+                            <span style="border-right: 0"><a target="_blank" href="{{${set_user_to_unsubscribed_url}}}">Unsubscribe</a></span>
                     </div>
                     <p class="copyright">Copyright © 2020 GoGo Tech Limited. All rights reserved.</p>
                 </div>
