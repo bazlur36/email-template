@@ -16,6 +16,37 @@
             padding: 0;
         }
 
+        /* Remove space around the email design. */
+        html,
+        body {
+            margin: 0 auto !important;
+            padding: 0 !important;
+            height: 100% !important;
+            width: 100% !important;
+        }
+
+        /* Stop Outlook resizing small text. */
+        * {
+            -ms-text-size-adjust: 100%;
+        }
+
+        /* Stop Outlook from adding extra spacing to tables. */
+        table,
+        td {
+            mso-table-lspace: 0pt !important;
+            mso-table-rspace: 0pt !important;
+        }
+
+        /* Use a better rendering method when resizing images in Outlook IE. */
+        img {
+            -ms-interpolation-mode: bicubic;
+        }
+
+        /* Prevent Windows 10 Mail from underlining links. Styles for underlined links should be inline. */
+        a {
+            text-decoration: none;
+        }
+
         body {
             width: 100% !important;
             -webkit-text-size-adjust: 100%;
@@ -88,8 +119,11 @@
                             margin-top: 8px;
                         }*/
             .hero-banner img {
-                width: 100%;
-                height: 100%;
+
+            }
+
+            .header a {
+                margin-top: 30px;
             }
 
             .header a {
@@ -146,9 +180,9 @@
             }
 
             .footer {
-                background: #F7F8F8;
+                /*background: #F7F8F8;
                 padding: 64px 24px;
-                text-align: center;
+                text-align: center;*/
             }
 
             .wrapper p:last-child {
@@ -156,22 +190,19 @@
             }
 
             .visit-us {
-                color: #00121A;
-                font-size: 18px;
-                font-weight: bold;
+
             }
 
             .visit-us a {
-                color: #0078A8;
-                text-decoration: none;
+
             }
 
             .social-links, .other-links {
-                margin-top: 24px;
+
             }
 
             .social-links a, .other-links a {
-                display: inline-block;
+
             }
 
             .social-links span {
@@ -216,15 +247,14 @@
             }
 
             td.wrapper {
-                padding-left: 48px;
-                padding-right: 48px;
+
             }
 
             .content {
                 width: 600px;
             }
 
-            table[class=body] .wrapper {
+            .wrapper {
                 padding-left: 48px;
                 padding-right: 48px;
             }
@@ -284,12 +314,6 @@
                 cursor: default;
             }
 
-            .mobile_link a[href^="tel"], .mobile_link a[href^="sms"] {
-                text-decoration: default;
-                color: orange !important; /* or whatever your want */
-                pointer-events: auto;
-                cursor: default;
-            }
 
             .content {
                 width: 480px;
@@ -301,15 +325,16 @@
 
             table[class=body] .wrapper,
             table[class=body] .article {
-                padding: 64px 24px;
+                margin: 64px 24px;
             }
 
             td.wrapper {
-                padding-left: 32px;
-                padding-right: 32px;
+                margin-left: 32px;
+                margin-right: 32px;
             }
 
             .footer {
+
                 /*padding: 30px 10px 10px;*/
                 font-size: 12px;
             }
@@ -341,37 +366,37 @@
             }
         }
 
-        @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
-            a[href^="tel"], a[href^="sms"] {
-                text-decoration: none;
-                color: blue;
-                pointer-events: none;
-                cursor: default;
-            }
+        /* @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+             a[href^="tel"], a[href^="sms"] {
+                 text-decoration: none;
+                 color: blue;
+                 pointer-events: none;
+                 cursor: default;
+             }
 
-            .mobile_link a[href^="tel"], .mobile_link a[href^="sms"] {
-                text-decoration: default;
-                color: orange !important;
-                pointer-events: auto;
-                cursor: default;
-            }
-        }
+             .mobile_link a[href^="tel"], .mobile_link a[href^="sms"] {
+                 text-decoration: default;
+                 color: orange !important;
+                 pointer-events: auto;
+                 cursor: default;
+             }
+         }
 
-        @media only screen and (-webkit-min-device-pixel-ratio: 2) {
-            /* Put your iPhone 4g styles in here */
-        }
+         @media only screen and (-webkit-min-device-pixel-ratio: 2) {
+             !* Put your iPhone 4g styles in here *!
+         }
 
-        @media only screen and (-webkit-device-pixel-ratio: .75) {
-            /* Put CSS for low density (ldpi) Android layouts in here */
-        }
+         @media only screen and (-webkit-device-pixel-ratio: .75) {
+             !* Put CSS for low density (ldpi) Android layouts in here *!
+         }
 
-        @media only screen and (-webkit-device-pixel-ratio: 1) {
-            /* Put CSS for medium density (mdpi) Android layouts in here */
-        }
+         @media only screen and (-webkit-device-pixel-ratio: 1) {
+             !* Put CSS for medium density (mdpi) Android layouts in here *!
+         }
 
-        @media only screen and (-webkit-device-pixel-ratio: 1.5) {
-            /* Put CSS for high density (hdpi) Android layouts in here */
-        }
+         @media only screen and (-webkit-device-pixel-ratio: 1.5) {
+             !* Put CSS for high density (hdpi) Android layouts in here *!
+         }*/
     </style>
     <!--[if IEMobile 7]>
     <style type="text/css">
@@ -381,6 +406,36 @@
     <!--[if gte mso 9]>
     <style>
         /* Target Outlook 2007 and 2010 */
+    </style>
+    <![endif]-->
+    <!--[if mso]>
+    <style type="text/css">
+        table.body {
+            width: 600px !important;
+            border: 10px solid #0088BF !important;
+            max-width: 600px !important;
+            margin: 0 auto !important;
+            font-family: Arial, Helvetica
+        }
+
+        .content {
+            width: 100% !important;
+        }
+
+        .hero-banner, .hero-banner img {
+            width: 100% !important;
+        }
+
+        .hero-banner {
+            text-align: center;
+            overflow: hidden;
+        }
+
+        .hero-banner img {
+            min-width: 800px !important;
+        }
+
+
     </style>
     <![endif]-->
 </head>
@@ -397,13 +452,31 @@
                 <!-- START CENTERED WHITE CONTAINER -->
                 <!--<span class="preheader" style="color: transparent; display: none; height: 0; max-height: 0; max-width: 0; opacity: 0; overflow: hidden; mso-hide: all; visibility: hidden; width: 0;">This is preheader text. Some clients will show this text as a preview.</span>
                 -->
-                <div class="header" style="background: #0088BF; height: 80px; display: flex; padding-top: 48px">
-                    <a href="#" style="margin: 0 auto; width: 176px; height: 32px"> <img
-                            src="http://staging.dipshikhabd.org/wp-content/uploads/2020/06/GOGOX-white-yellow.png"
-                            alt=""/> </a>
-                </div>
-                <div class="hero-banner" style="background: #fff; display: flex; flex-direction: column;">
-                    <img src="http://staging.dipshikhabd.org/wp-content/uploads/2020/06/gogox_delivery.png" alt=""/>
+                <!-- <div class="header" style="background: #0088BF; height: 80px; display: flex; padding-top: 48px">
+                     <a href="#" style="margin: 0 auto; width: 176px; height: 32px"> <img
+                             src="http://staging.dipshikhabd.org/wp-content/uploads/2020/06/GOGOX-white-yellow.png"
+                             alt=""/> </a>
+                 </div>
+                 <div class="hero-banner" style="background: #fff; display: flex; flex-direction: column;">
+                     <img src="http://staging.dipshikhabd.org/wp-content/uploads/2020/06/gogox_delivery.png" alt=""/>
+                 </div>-->
+                <table cellspacing="0"
+                       style="border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; width: 100%; max-width: 600px; background: #ffffff;">
+                    <tr>
+                        <td class="header" style="    background: #0088BF;
+    height: 128px;
+    display: flex;
+    /* padding-top: 48px; */
+    text-align: center;
+    align-items: center;"><a href="#" style="margin: 48px auto; width: 176px; height: 32px"> <img
+                                src="http://staging.dipshikhabd.org/wp-content/uploads/2020/06/GOGOX-white-yellow.png"
+                                alt=""/> </a></td>
+                    </tr>
+                </table>
+                <div class="hero-banner" style="background: #fff; display: flex; width: 100%; flex-direction: column;">
+                    <img style="width: 100%;
+                height: 100%;" src="http://staging.dipshikhabd.org/wp-content/uploads/2020/06/gogox_delivery.png"
+                         alt=""/>
                 </div>
                 <table class="main"
                        style="border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; width: 100%; background: #ffffff;">
@@ -411,7 +484,8 @@
                     <!-- START MAIN CONTENT AREA -->
                     <tr>
                         <td class="wrapper"
-                            style="font-family: Arial; font-size: 16px; vertical-align: top; padding-top: 64px; padding-bottom: 64px; box-sizing: border-box;">
+                            style="font-family: Arial;  padding-left: 48px;
+                padding-right: 48px; font-size: 16px; vertical-align: top; padding-top: 64px; padding-bottom: 64px; box-sizing: border-box;">
                             <table border="0" cellpadding="0" cellspacing="0"
                                    style="border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; width: 100%;">
                                 <tr>
@@ -432,33 +506,33 @@
                                             convallis vel erat in, convallis vulputate urna. Curabitur semper lorem sit
                                             amet lectus tempus, vitae fringilla mauris malesuada.
                                         </p>
-                                        <figure class="hero-banner" style="margin-top: 32px;">
+                                        <div class="hero-banner" style="margin-top: 32px;">
                                             <img src="http://staging.dipshikhabd.org/wp-content/uploads/2020/06/gogox_HongKong_city.png"
                                                  alt=""/>
-                                            <figcaption
-                                                    style="color: #00121A; font-size: 12px; line-height: 16px; margin-top: 8px;">
+                                            <div class="caption"
+                                                 style="color: #00121A; font-size: 12px; line-height: 16px; margin-top: 8px;">
                                                 Sed interdum sem non ante pellentesque commodo. Ut sed augue.
                                                 Aenean in nulla turpis.
-                                            </figcaption>
-                                        </figure>
-                                        <figure class="hero-banner" style="margin-top: 32px;">
+                                            </div>
+                                        </div>
+                                        <div class="hero-banner" style="margin-top: 32px;">
                                             <img src="http://staging.dipshikhabd.org/wp-content/uploads/2020/06/gogox_city-07.png"
                                                  alt=""/>
-                                            <figcaption
+                                            <div
                                                     style="color: #00121A; font-size: 12px; line-height: 16px; margin-top: 8px;">
                                                 Sed interdum sem non ante pellentesque commodo. Ut sed augue.
                                                 Aenean in nulla turpis.
-                                            </figcaption>
-                                        </figure>
-                                        <figure class="hero-banner" style="margin-top: 32px;">
+                                            </div>
+                                        </div>
+                                        <div class="hero-banner" style="margin-top: 32px;">
                                             <img src="http://staging.dipshikhabd.org/wp-content/uploads/2020/06/gogox_city-08.png"
                                                  alt=""/>
-                                            <figcaption
+                                            <div
                                                     style="color: #00121A; font-size: 12px; line-height: 16px; margin-top: 8px;">
                                                 Sed interdum sem non ante pellentesque commodo. Ut sed augue.
                                                 Aenean in nulla turpis.
-                                            </figcaption>
-                                        </figure>
+                                            </div>
+                                        </div>
                                         <!-- <div class="delivery-cities">
                                              <figure class="city city1">
                                                  <img src="images/gogox_city-07.png" alt="" />
@@ -503,31 +577,72 @@
                 </table>
 
                 <!-- START FOOTER -->
-                <div class="footer">
-                    <div class="visit-us">
-                        Visit us at <a href="#">gogox.com</a>
-                    </div>
-                    <div class="social-links">
-                        <span><a target="_blank" href="https://www.facebook.com/GOGOXhk/"><img
+                <table style="width: 100%; background: #F7F8F8">
+                    <tr>
+                        <td style=" padding: 64px 24px;
+    text-align: center;">
+                            <div class="footer" style="">
+                                <div class="visit-us" style="color: #00121A;
+                font-size: 18px;
+                font-weight: bold;">
+                                    Visit us at <a style=" color: #0078A8;
+                text-decoration: none;" target="_blank" href="http://www.godox.com/EN/">gogox.com</a>
+                                </div>
+                                <div class="social-links" style=" margin-top: 24px;">
+                        <span><a style="display: inline-block;" target="_blank"
+                                 href="https://www.facebook.com/GOGOXhk/"><img
                                 src="http://staging.dipshikhabd.org/wp-content/uploads/2020/06/facebook.png"
                                 alt="facebook"/> </a> </span>
-                        <span><a target="_blank" href="https://www.instagram.com/gogovan_hk/"><img
-                                src="http://staging.dipshikhabd.org/wp-content/uploads/2020/06/instagram.png"
-                                alt="instagram"/> </a> </span>
-                        <span><a target="_blank" href="https://www.youtube.com/c/gogovanhk"><img
-                                src="http://staging.dipshikhabd.org/wp-content/uploads/2020/06/youtube.png"
-                                alt="youtube"/> </a> </span>
-                        <span><a target="_blank" href="https://www.linkedin.com/company/gogovan/"><img
-                                src="http://staging.dipshikhabd.org/wp-content/uploads/2020/06/linkedin.png"
-                                alt="linkedin"/> </a> </span>
-                    </div>
-                    <div class="other-links">
-                        <span><a target="_blank" href="https://www.gogox.com/privacy">Privacy Policy</a></span>
-                        <span><a target="_blank" href="https://www.gogox.com/privacy">Terms & Conditions</a></span>
-                        <span style="border-right: 0"><a target="_blank" href="{{${set_user_to_unsubscribed_url}}}">Unsubscribe</a></span>
-                    </div>
-                    <p class="copyright">Copyright © 2020 GoGo Tech Limited. All rights reserved.</p>
-                </div>
+                                    <span><a style="display: inline-block;" target="_blank"
+                                             href="https://www.instagram.com/gogovan_hk/"><img
+                                            src="http://staging.dipshikhabd.org/wp-content/uploads/2020/06/instagram.png"
+                                            alt="instagram"/> </a> </span>
+                                    <span><a style="display: inline-block;" target="_blank"
+                                             href="https://www.youtube.com/c/gogovanhk"><img
+                                            src="http://staging.dipshikhabd.org/wp-content/uploads/2020/06/youtube.png"
+                                            alt="youtube"/> </a> </span>
+                                    <span><a style="display: inline-block;" target="_blank"
+                                             href="https://www.linkedin.com/company/gogovan/"><img
+                                            src="http://staging.dipshikhabd.org/wp-content/uploads/2020/06/linkedin.png"
+                                            alt="linkedin"/> </a> </span>
+                                </div>
+                                <div class="other-links" style=" margin-top: 24px;">
+                        <span style="    line-height: 16px;
+    border-right: 1px solid #adb3b5;
+    padding-right: 10px;
+    margin-right: 10px;
+    margin-top: 0;
+    display: inline-block;"><a style="display: inline-block; color: #adb3b5;
+    text-decoration: none;
+    text-align: center;" target="_blank" href="https://www.gogox.com/privacy">Privacy Policy</a></span>
+                                    <span style="    line-height: 16px;
+    border-right: 1px solid #adb3b5;
+    padding-right: 10px;
+    margin-right: 10px;
+    margin-top: 0;
+    display: inline-block;"><a style="display: inline-block;color: #adb3b5;
+    text-decoration: none;
+    text-align: center;" target="_blank" href="https://www.gogox.com/privacy">Terms & Conditions</a></span>
+                                    <span style="    line-height: 16px;
+    border-right: 1px solid #adb3b5;
+    padding-right: 10px;
+    margin-right: 10px;
+    margin-top: 0;
+    display: inline-block;border-right: 0"><a style="display: inline-block;color: #adb3b5;
+    text-decoration: none;
+    text-align: center;" target="_blank"
+                                              href="{{${set_user_to_unsubscribed_url}}}">Unsubscribe</a></span>
+                                </div>
+                                <p class="copyright" style="text-align: inherit;
+    color: #adb3b5;
+    margin-top: 0;
+    line-height: 16px;">Copyright © 2020 GoGo Tech Limited. All rights reserved.</p>
+                            </div>
+
+                        </td>
+                    </tr>
+                </table>
+
                 <!-- END FOOTER -->
 
                 <!-- END CENTERED WHITE CONTAINER -->
