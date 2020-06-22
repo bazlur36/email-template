@@ -23,6 +23,7 @@
             padding: 0 !important;
             height: 100% !important;
             width: 100% !important;
+            overflow-x: hidden;
         }
 
         /* Stop Outlook resizing small text. */
@@ -306,7 +307,7 @@
             }
         }
 
-        @media only screen and (max-device-width: 480px) {
+        @media only screen and (max-width: 480px) {
             a[href^="tel"], a[href^="sms"] {
                 text-decoration: none;
                 color: black; /* or whatever your want */
@@ -314,23 +315,30 @@
                 cursor: default;
             }
 
+            table.main {
+                max-width: 480px !important;
+            }
 
             .content {
-                width: 480px;
+                width: 480px !important;
             }
 
             .other-links span a {
                 font-size: 12px;
             }
 
-            table[class=body] .wrapper,
-            table[class=body] .article {
-                margin: 64px 24px;
+            .wrapper .hero-banner img {
+                max-width: 414px;
             }
 
+          /*  table[class=body] .wrapper,
+            table[class=body] .article {
+                margin: 64px 24px !important;
+            }*/
+
             td.wrapper {
-                margin-left: 32px;
-                margin-right: 32px;
+                padding-left: 32px !important;
+                padding-right: 32px !important;
             }
 
             .footer {
@@ -351,18 +359,26 @@
             }
 
             .content {
-                width: 375px;
+                width: 375px !important;
+            }
+
+            .wrapper .hero-banner img {
+                max-width: 300px;
             }
         }
 
         @media only screen and (max-width: 320px) {
             .content {
-                width: 320px;
+                width: 320px !important;
             }
 
             .other-links ul li {
                 padding-right: 7px;
                 margin-right: 8px;
+            }
+
+            .wrapper .hero-banner img {
+                max-width: 250px;
             }
         }
 
