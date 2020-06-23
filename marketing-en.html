@@ -14,8 +14,6 @@
                 padding-left: 32px !important;
                 padding-right: 32px !important;
             }
-            .footer { font-size: 12px; }
-            .footer p.copyright { font-size: 12px; }
         }
 
         @media only screen and (max-width: 375px) {
@@ -49,16 +47,19 @@
             width: 100% !important;
         }
 
-        .hero-banner, .hero-banner img {
+        .hero-banner, .hero-banner img,
+        .hero-banner-centered, .hero-banner-centered img {
             width: 100% !important;
         }
 
-        .hero-banner {
+        .hero-banner,
+        .hero-banner-centered {
             text-align: center;
             overflow: hidden;
         }
 
-        .hero-banner img {
+        .hero-banner img,
+        .hero-banner-centered img {
             min-width: 800px !important;
         }
 
@@ -66,11 +67,11 @@
     </style>
     <![endif]-->
 </head>
-<body>
+<body style="margin: 0 !important; overflow-x: hidden">
 
 
 <table class="body"
-       style="border-collapse: collapse; width: 100%; margin: 0 auto; max-width: 600px; background-color: #E5E5E5;">
+       style="border-collapse: collapse; overflow-x: hidden; width: 100%; margin: 0 auto; max-width: 600px; background-color: #E5E5E5;">
     <tr>
         <td class="container">
             <div class="content" style="font-family: Arial, Helvetica;">
@@ -116,16 +117,15 @@
                                             convallis vel erat in, convallis vulputate urna. Curabitur semper lorem sit
                                             amet lectus tempus, vitae fringilla mauris malesuada.
                                         </p>
-                                        <div class="hero-banner centered" style="margin-top: 32px;">
+                                        <div class="hero-banner-centered" style="margin-top: 32px;">
                                             <img src="http://staging.dipshikhabd.org/wp-content/uploads/2020/06/gogox_HongKong_city.png"
                                                  alt=""/>
-                                            <div class="caption"
-                                                 style="color: #00121A; font-size: 12px; line-height: 16px; margin-top: 8px;">
+                                            <div style="color: #00121A; font-size: 12px; line-height: 16px; margin-top: 8px;">
                                                 Sed interdum sem non ante pellentesque commodo. Ut sed augue.
                                                 Aenean in nulla turpis.
                                             </div>
                                         </div>
-                                        <div class="hero-banner centered" style="margin-top: 32px;">
+                                        <div class="hero-banner-centered" style="margin-top: 32px;">
                                             <img src="http://staging.dipshikhabd.org/wp-content/uploads/2020/06/gogox_city-07.png"
                                                  alt=""/>
                                             <div style="color: #00121A; font-size: 12px; line-height: 16px; margin-top: 8px;">
@@ -133,7 +133,7 @@
                                                 Aenean in nulla turpis.
                                             </div>
                                         </div>
-                                        <div class="hero-banner centered" style="margin-top: 32px;">
+                                        <div class="hero-banner-centered" style="margin-top: 32px;">
                                             <img src="http://staging.dipshikhabd.org/wp-content/uploads/2020/06/gogox_city-08.png"
                                                  alt=""/>
                                             <div style="color: #00121A; font-size: 12px; line-height: 16px; margin-top: 8px;">
@@ -176,11 +176,11 @@
                 <!-- START FOOTER -->
                 <table style="width: 100%; background: #F7F8F8">
                     <tr>
-                        <td style=" padding: 64px 24px; text-align: center; font-size: 12px">
+                        <td style="padding: 64px 24px; text-align: center; font-size: 12px">
                             <div class="footer">
                                 <div class="visit-us" style="color: #00121A; font-size: 18px; font-weight: bold;">
                                     Visit us at <a style=" color: #0078A8; text-decoration: none;" target="_blank"
-                                                   href="http://www.godox.com/EN/">gogox.com</a>
+                                                   href="https://www.gogox.com/?utm_source=Braze&utm_medium=Email&utm_campaign=edm_header">gogox.com</a>
                                 </div>
                                 <div class="social-links" style=" margin-top: 24px;">
                                     <span>
@@ -214,15 +214,15 @@
                                 <div class="other-links" style=" margin-top: 24px; margin-bottom: 3px">
                                     <span style="line-height: 16px; margin-top: 0; display: inline-block;">
                                         <a style="display: inline-block; color: #adb3b5; text-decoration: none; text-align: center;"
-                                           target="_blank" href="https://www.gogox.com/privacy">Privacy Policy</a>
+                                           target="_blank" href="https://www.gogox.com/privacy?utm_source=braze&utm_medium=email&utm_campaign=edm_footer">Privacy Policy</a>
                                     </span>
                                     <span style="display: inline-block; color: #adb3b5; margin-left: 5px; margin-right: 5px">|</span>
                                     <span style="line-height: 16px; margin-top: 0; display: inline-block;">
                                         <a style="display: inline-block;color: #adb3b5; text-decoration: none; text-align: center;"
-                                           target="_blank" href="https://www.gogox.com/privacy">Terms & Conditions</a>
+                                           target="_blank" href="https://www.gogox.com/terms?utm_source=braze&utm_medium=email&utm_campaign=edm_footer">Terms & Conditions</a>
                                     </span>
                                     <span style="display: inline-block; color: #adb3b5; margin-left: 5px; margin-right: 5px">|</span>
-                                    <span style="line-height: 16px; border-right: 1px solid #adb3b5; margin-top: 0; display: inline-block;border-right: 0">
+                                    <span style="line-height: 16px; margin-top: 0; display: inline-block; ">
                                         <a style="display: inline-block;color: #adb3b5; text-decoration: none; text-align: center;"
                                            target="_blank"
                                            href="{{${set_user_to_unsubscribed_url}}}">Unsubscribe</a></span>
