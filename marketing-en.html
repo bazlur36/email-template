@@ -9,27 +9,29 @@
         @media only screen and (max-width: 480px) {
             table.main { max-width: 480px !important; }
             .content { width: 480px !important; }
-            .wrapper .hero-banner img { max-width: 414px; }
+            .wrapper .hero-banner img { max-width: 416px; }
             td.wrapper {
                 padding-left: 32px !important;
                 padding-right: 32px !important;
             }
+            .hero-banner-left-aligned { max-width: 416px; }
         }
 
         @media only screen and (max-width: 375px) {
             .content { width: 375px !important; }
-            .wrapper .hero-banner img { max-width: 300px; }
-            table.body .other-links a { font-size: 12px; }
+            .wrapper .hero-banner img { max-width: 310px; }
+            .hero-banner-left-aligned { max-width: 310px; }
         }
 
         @media only screen and (max-width: 360px) {
             .content { width: 360px !important; }
-            .wrapper .hero-banner img { max-width: 290px; }
+            .wrapper .hero-banner img { max-width: 296px; }
+            .hero-banner-left-aligned { max-width: 296px; }
         }
 
         @media only screen and (max-width: 320px) {
             .content { width: 320px !important; }
-            .wrapper .hero-banner img { max-width: 250px; }
+            .hero-banner-left-aligned { max-width: 256px; }
         }
 
     </style>
@@ -46,24 +48,6 @@
         .content {
             width: 100% !important;
         }
-
-        .hero-banner, .hero-banner img,
-        .hero-banner-centered, .hero-banner-centered img {
-            width: 100% !important;
-        }
-
-        .hero-banner,
-        .hero-banner-centered {
-            text-align: center;
-            overflow: hidden;
-        }
-
-        .hero-banner img,
-        .hero-banner-centered img {
-            min-width: 800px !important;
-        }
-
-
     </style>
     <![endif]-->
 </head>
@@ -117,24 +101,8 @@
                                             convallis vel erat in, convallis vulputate urna. Curabitur semper lorem sit
                                             amet lectus tempus, vitae fringilla mauris malesuada.
                                         </p>
-                                        <div class="hero-banner-centered" style="margin-top: 32px;">
-                                            <img src="http://staging.dipshikhabd.org/wp-content/uploads/2020/06/gogox_HongKong_city.png"
-                                                 alt=""/>
-                                            <div style="color: #00121A; font-size: 12px; line-height: 16px; margin-top: 8px;">
-                                                Sed interdum sem non ante pellentesque commodo. Ut sed augue.
-                                                Aenean in nulla turpis.
-                                            </div>
-                                        </div>
-                                        <div class="hero-banner-centered" style="margin-top: 32px;">
-                                            <img src="http://staging.dipshikhabd.org/wp-content/uploads/2020/06/gogox_city-07.png"
-                                                 alt=""/>
-                                            <div style="color: #00121A; font-size: 12px; line-height: 16px; margin-top: 8px;">
-                                                Sed interdum sem non ante pellentesque commodo. Ut sed augue.
-                                                Aenean in nulla turpis.
-                                            </div>
-                                        </div>
-                                        <div class="hero-banner-centered" style="margin-top: 32px;">
-                                            <img src="http://staging.dipshikhabd.org/wp-content/uploads/2020/06/gogox_city-08.png"
+                                        <div class="hero-banner-left-aligned" style="margin-top: 32px;">
+                                            <img style="width: 100%" src="http://staging.dipshikhabd.org/wp-content/uploads/2020/06/gogox_HongKong_city.png"
                                                  alt=""/>
                                             <div style="color: #00121A; font-size: 12px; line-height: 16px; margin-top: 8px;">
                                                 Sed interdum sem non ante pellentesque commodo. Ut sed augue.
@@ -160,11 +128,13 @@
                                                 libero congue turpis, ut ornare velit nulla et tellus.
                                             </li>
                                         </ol>
-                                        <p style="padding-bottom: 64px; margin-top: 32px; margin-bottom: 0; line-height: 28px; font-size: 16px;">
-                                            Duis erat lectus, iaculis nec nunc a, blandit mattis enim. Nam tincidunt
-                                            scelerisque turpis id gravida. Curabitur consectetur justo nec mauris
-                                            pretium, nec bibendum magna auctor.
-                                        </p>
+                                        <div class="hero-banner-centered-aligned" style="margin-top: 32px; text-align: center">
+                                            <img src="http://staging.dipshikhabd.org/wp-content/uploads/2020/06/order-details-table.png"
+                                                 alt=""/>
+                                            <div style="color: #00121A; font-size: 12px; line-height: 16px; margin-top: 8px;">
+                                                Sed interdum sem non ante pellentesque.
+                                            </div>
+                                        </div>
                                     </td>
                                 </tr>
                             </table>
@@ -177,12 +147,12 @@
                 <table style="width: 100%; background: #F7F8F8">
                     <tr>
                         <td style="padding: 64px 24px; text-align: center; font-size: 12px">
-                            <div class="footer">
-                                <div class="visit-us" style="color: #00121A; font-size: 18px; font-weight: bold;">
+                            <div>
+                                <div style="color: #00121A; font-size: 18px; font-weight: bold;">
                                     Visit us at <a style=" color: #0078A8; text-decoration: none;" target="_blank"
-                                                   href="https://www.gogox.com/?utm_source=Braze&utm_medium=Email&utm_campaign=edm_header">gogox.com</a>
+                                                   href="https://www.gogox.com/?utm_source=Braze&utm_medium=Email&utm_campaign=edm_footer">gogox.com</a>
                                 </div>
-                                <div class="social-links" style=" margin-top: 24px;">
+                                <div style=" margin-top: 24px;">
                                     <span>
                                         <a style="display: inline-block;" target="_blank"
                                            href="https://www.facebook.com/GOGOXhk/">
@@ -211,7 +181,7 @@
                                         </a>
                                     </span>
                                 </div>
-                                <div class="other-links" style=" margin-top: 24px; margin-bottom: 3px">
+                                <div style=" margin-top: 24px; margin-bottom: 3px">
                                     <span style="line-height: 16px; margin-top: 0; display: inline-block;">
                                         <a style="display: inline-block; color: #adb3b5; text-decoration: none; text-align: center;"
                                            target="_blank" href="https://www.gogox.com/privacy?utm_source=braze&utm_medium=email&utm_campaign=edm_footer">Privacy Policy</a>
@@ -227,7 +197,7 @@
                                            target="_blank"
                                            href="{{${set_user_to_unsubscribed_url}}}">Unsubscribe</a></span>
                                 </div>
-                                <p class="copyright" style="font-size: 12px; text-align: inherit; color: #adb3b5; margin-top: 0;line-height: 16px;">
+                                <p style="font-size: 12px; text-align: inherit; color: #adb3b5; margin-top: 0;line-height: 16px;">
                                     Copyright © 2020 GoGo Tech Limited. All rights reserved.</p>
                             </div>
 
